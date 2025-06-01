@@ -24,15 +24,21 @@
     list-style-type: none;
     position: absolute;
     top: 80px;
-    /* left: 0; */
     right: 30px;
     text-align: end;
+    height: 50vh;
     /* background-color: rgb(94, 53, 3); */
+    font-size: 1.35rem;
+    z-index: 2;
   }
 
   .nav ul li{
     margin-bottom: 190px;
   }
+
+  nav ul li a{
+    margin-bottom: 120px; 
+  } 
 
   .burger__menu{
     width: 30px;
