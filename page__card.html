@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/page__card.css">
+
+  <script src="js/page__card/page__card.js"></script>
+  
+  <script>
+    function check__photo(number__button){
+      let main__photo = document.getElementById('main__photo__btn');
+      let click__button = document.getElementById('other__photo__btn__small__'+number__button);
+      main__photo.style.backgroundImage = `url(img/page__card/photo__car__${number__button}.jpg)`;
+    
+      let list__button = document.getElementsByClassName('btn__small');
+      for(let i = 0; i < list__button.length; i++){
+        list__button[i].classList.remove('btn__small__active');
+      }
+      list__button[number__button-1].classList.add('btn__small__active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <img src="img/header/logo.png" alt="logo" class="logo">
+        <nav>
+          <ul>
+            <li><a href="index.html#our__park">Наш парк</a></li>
+            <li><a href="index.html#conditions_rent">Условия аренды</a></li>
+            <li><a href="index.html#review">Отзывы</a></li>
+            <li><a href="index.html#contacts">Контакты</a></li>
+            <li>+79781173839</li>
+          </ul>
+        </nav>
+      </div>
+    </div> 
+  </header>
+  <main>
+    
+    <section id="card">
+      <div class="page__card__wrapper">
+        <div class="page__card">
+          <div class="one__block__info">
+            <div class="all_photos">
+              <div class="main__photo">
+                <div id="main__photo__btn"></div>
+              </div>
+              <div class="other__photo">
+                <button id="other__photo__btn__small__1" class="btn__small btn__small__active" onclick="check__photo(1)"></button>
+                <button id="other__photo__btn__small__2" class="btn__small" onclick="check__photo(2)"></button>
+                <button id="other__photo__btn__small__3" class="btn__small" onclick="check__photo(3)"></button>
+                <button id="other__photo__btn__small__4" class="btn__small" onclick="check__photo(4)"></button>
+                <button id="other__photo__btn__small__5" class="btn__small" onclick="check__photo(5)"></button>
+              </div>
+            </div>
+            <button class="button__page__card">Арендовать</button>
+            
+          </div>
+          <div class="one__block__info">
+            <div class="card__wrapper">
+              <div class="card__header__wrapper">
+                <div class="card__header">
+                  <div class="logo__car">
+                    <img src="img/hero2/logo__car__bmw.png" alt="логотип бмв" width="100%">
+                  </div>
+                  <h3 class="name__car">BMW <span>i 325</span> кабриолет</h3>
+                </div>
+              </div>
+              <div class="properties__car">
+                <div class="one__property__car">
+                  <div class="property__image">
+                    <img src="img/hero2/property__1__image.png" alt="изображение свойства">
+                    <p class="property__year">2008</p>
+                  </div>
+                  <p class="property__name">год</p>
+                </div>
+                <div class="one__property__car">
+                  <div class="property__image">
+                    <img src="img/hero2/property__2__image.png" alt="изображение свойства">
+                  </div>
+                  <p class="property__name">автомат</p>
+                </div>
+                <div class="one__property__car">
+                  <div class="property__image">
+                    <img src="img/hero2/property__3__image.png" alt="изображение свойства">
+                    <p class="engine__capacity">2,5</p>
+                  </div>
+                  <p>204 л.с.</p>
+                </div>
+                <div class="one__property__car">
+                  <div class="property__image">
+                    <img src="img/hero2/property__4__image.png" alt="изображение свойства">
+                  </div>
+                  <p class="property__name">95</p>
+                </div>
+              </div>
+            </div>
+            <p class="price__season">цены по сезонам</p>
+            <div class="block__price">
+              <button class="button__season button__season__active" onclick="check__season__price('low', 0)">низкий</button>
+              <button class="button__season" onclick="check__season__price('between__season', 1)">межсезонье</button>
+              <button class="button__season" onclick="check__season__price('high', 2)">высокий</button>
+            </div>
+            <p class="date">10.01-30.04; 21.10-27.12</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>1-2 суток</td>
+                  <td class="td__price">5500 руб.</td>
+                </tr>
+                <tr>
+                  <td>3-6 суток</td>
+                  <td class="td__price">5000 руб.</td>
+                </tr>
+                <tr>
+                  <td>от 7 суток</td>
+                  <td class="td__price">4500 руб.</td>
+                </tr>
+                <tr>
+                  <td>залог</td>
+                  <td class="td__price">30 000 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  
+</body>
+</html>    

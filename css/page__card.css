@@ -1,0 +1,173 @@
+
+.page__card__wrapper{
+  width: 1040px;
+  margin: auto;
+}
+
+.page__card{
+  margin: auto;
+  margin-top: 70px;
+  color: white;
+  display: grid;
+  grid-template: 1fr / repeat(2, 520px);
+  gap: 95px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.one__block__info{
+  text-align: center;
+}
+
+#main__photo__btn{
+  background-image: url(../img/page__card/photo__car__1.jpg);
+  width: 450px;
+  height: 266px;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn__small{
+  width: 84px;
+  height: 84px;
+  background-size: cover;
+  display: block;
+  border: 0;
+  /* border: ; */
+}
+
+.btn__small__active{
+  border: 2px solid #DBB500;
+  border-radius: 10px;
+}
+
+#other__photo__btn__small__1{
+  background-image: url(../img/page__card/photo__car__1.jpg);
+}
+#other__photo__btn__small__2{
+  background-image: url(../img/page__card/photo__car__2.jpg);
+}
+#other__photo__btn__small__3{
+  background-image: url(../img/page__card/photo__car__3.jpg);
+}
+#other__photo__btn__small__4{
+  background-image: url(../img/page__card/photo__car__4.jpg);
+}
+#other__photo__btn__small__5{
+  background-image: url(../img/page__card/photo__car__5.jpg);
+}
+
+.all_photos{
+  padding: 26px 2px;
+  width: 498px;
+  /* height: 419px; */
+  border: 1px solid #6B6B6B;
+  border-radius: 10px;
+  background-color: #0D100F;
+  box-shadow: 0px 4px 10px 0px #4B989033;
+  display: grid;
+  grid-template: 266px 84px / 1fr;
+  gap: 17px 24px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.main__photo{
+  height: 266px;
+}
+.other__photo{
+  width: 450px;
+  height: 84px;
+  display: grid;
+  grid-template: 1fr / repeat(5, 1fr);
+  justify-items: center;
+}
+
+.properties__car {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.one__block__info:last-child{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.logo__car{
+  width: 26px;
+  height: 26px;
+}
+
+.name__car{
+  font-size: 36px;
+}
+
+.block__price{
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.button__season{
+  background-color: transparent;
+  border: 0;
+  color: #FFFFFF66;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 300ms ease;
+}
+
+.button__season:hover{
+  transform: scale(1.5);
+}
+
+.price__season, .button__season__active{
+  font-weight: 500;
+  color: white;
+}
+
+
+
+.price__season, .block__price, .date{
+  margin-bottom: 42px;
+}
+
+.properties__car, .date{
+  font-size: 18px;
+}
+
+.date{
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.block__price>button:first-child{
+  justify-self: start;
+}
+.block__price>button:last-child{
+  justify-self: end;
+}
+
+.one__block__info>table{
+  margin: auto;
+  
+}
+
+.one__block__info>table tbody tr td{
+  padding-left: 20px;
+  text-align: start;
+  width: 223px;
+}
+
+.one__block__info>table, .one__block__info>table tbody tr td{
+  border: 1px solid #FFFFFF66;
+  border-collapse: collapse;
+}
+
+.property__year{
+  left: 18px;
+}
+
+.engine__capacity{
+  left: 48px;
+}
