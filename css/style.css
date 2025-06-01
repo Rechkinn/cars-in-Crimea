@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  
 }
 
 body{
@@ -12,9 +13,12 @@ body{
   background-color: #0A0A09;
   /* background-color: #d8d8d8; */
   /* z-index: -100; */
+  border: 1px solid red;
 }
 
-
+header{
+  margin: auto;
+}
 
 .container{
   /* position: relative; */
@@ -22,14 +26,22 @@ body{
   margin: auto;
 }
 
+
+
 .header {
+  margin: auto;
   display: flex;
+  width: 100%;
   height: 74px;
   /* margin: auto; */
   /* justify-content: space-between; */
   align-items: end;
   margin-bottom: 13px; 
   /* margin-bottom: 140px; */
+}
+
+.burger__menu{
+  display: none;
 }
 
 .header img{
@@ -73,6 +85,7 @@ nav ul li:last-child{
   position: relative;
   color: white;
   height: 1058px;
+  width: 1440px;
 }
 
 .hero1 h1{
