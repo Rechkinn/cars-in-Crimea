@@ -1,13 +1,38 @@
 @media (max-width: 1440px){
-  header{
+  header, .hero1, .hero2{
     max-width: 1280px;
+  }
+
+  .hero3{
+    max-width: 100%;
+  }
+
+  .hero3>h1{
+    padding-top: 54px;
+    margin-bottom: 80px;
+  }
+
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, minmax(43vw, 1fr));
+  }
+  
+
+  .bg__logo__bmw, .bg__logo__kia, .bg__logo__vw, .bg__logo__mercedes{
+    display: none;
   }
 }
 
 @media (max-width: 1280px){
-  header{
+  header, .hero1, .hero2{
     max-width: 1024px;
   }
+
+  .cards{
+    grid-template-rows: repeat(6, minmax(35vw, 1fr));
+  }
+
+  
 }
 
 @media (max-width: 1024px){
@@ -15,37 +40,152 @@
     position: relative;
     display: block;
   }
-  nav{
-    /* display: none; */
-  }
 
   nav ul{
+    padding: 10px 15px;
     display: block; 
     list-style-type: none;
     position: absolute;
-    top: 80px;
-    right: 30px;
-    text-align: end;
-    height: 50vh;
-    /* background-color: rgb(94, 53, 3); */
+    top: calc(37px - 300px);
+    right: calc(30px + 37px);
+    background-color: rgb(0, 0, 0);
     font-size: 1.35rem;
     z-index: 2;
   }
 
-  .nav ul li{
-    margin-bottom: 190px;
+  .menu__not__active{
+    transition: 300ms;
+    transform: translateY(300px);
   }
 
-  nav ul li a{
-    margin-bottom: 120px; 
-  } 
-
+  nav ul li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #5DBEB4;
+  }
+  nav ul li:last-child{
+    margin-bottom: 0;
+  }
   .burger__menu{
-    width: 30px;
-    height: 28px;
     display: inline;
-    position: absolute;
-    right: 30px;
   }
   
+  .hero1, .hero2{
+    max-width: 768px;
+  }
+
+  .hero1{
+    position: static;
+  }
+
+  .map{
+    display: none;
+  }
+
+  .hero1 .car__span{
+    top: calc(1100px/2);
+    right: -5%;
+  }
+
+  .hero1 .car{
+    top: calc(900px/2);
+    right: -20%;
+  }
+
+  .cards{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, minmax(43vw, 1fr));
+  }
+  
+  .conditions{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero3{
+    height: 920px;
+  }
+
+  .condition__bg__car{
+    top: 510px;
+  }
+
+}
+
+
+
+@media (max-width: 768px){
+  
+  .hero1, .hero2{
+    max-width: 480px;
+  }
+  
+  .hero1{
+    text-align: center;
+  }
+  .hero1 .car__span{
+    display: none;
+  }
+
+  .hero1 .car{
+    top: calc(1000px/2);
+    right: -20%;
+  }
+  .hero1 button{
+    margin-top: 42vh;
+  }
+  
+  .condition__bg__car{
+    top: 575px;
+  }
+   
+}
+
+
+
+@media (max-width: 480px){
+  .hero1{
+    max-width: 300px;
+  }
+  .hero2{
+    width: 100%;
+  }
+  .hero3{
+    height: 850px;
+  }
+  .hero1 h1{
+    padding-top: 49px;
+  }
+  .hero1 button{
+    margin-top: 30vh;
+  }
+
+  .cards{
+    grid-template-columns: repeat(1, 100vw);
+    gap: 12px;
+  }
+  .card{
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .conditions{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .condition__one{
+    grid-template-columns: repeat(1, 1fr 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+  }
+
+  .condition__one>p{
+    text-align: start;
+    justify-self: start;
+  }
+
+
+  .condition__bg__car{
+    top: 620px;
+    left: -100px;
+  }
 }

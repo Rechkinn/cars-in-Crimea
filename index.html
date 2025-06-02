@@ -10,6 +10,16 @@
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
+
+  <script>
+
+    function open__burger__menu(){
+      let ul = document.getElementById('menu').classList.toggle('menu__not__active');
+      // ul.style
+    }
+
+  </script>
+
 </head>
 <body>
   <header>
@@ -18,7 +28,7 @@
         <img src="img/header/logo.png" alt="logo" class="logo">
         
         <nav>
-          <ul>
+          <ul id="menu" class="menu__not__active">
             <li><a href="#our__park">Наш парк</a></li>
             <li><a href="#conditions_rent">Условия аренды</a></li>
             <li><a href="#review">Отзывы</a></li>
@@ -27,10 +37,10 @@
           </ul>
         </nav>
 
-        <button class="burger__menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="burger__menu" onclick="open__burger__menu()">
+          <span class="burger__menu__span"></span>
+          <span class="burger__menu__span"></span>
+          <span class="burger__menu__span"></span>
         </button>
 
       </div>
@@ -38,8 +48,10 @@
   </header>
   <main>
     <section id="full__site">
-      <div class="container">
+      <!-- <div class="container"> -->
         <div class="hero1">
+          <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error, quia earum natus nemo aperiam ex sequi ipsam esse! Molestias ipsum reprehenderit ratione voluptates corrupti unde dolorum sapiente deleniti saepe?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo ab, excepturi, obcaecati alias in laborum autem corporis veniam quibusdam voluptatem vero dolorum harum quidem eligendi corrupti laudantium dolore quia?</p> -->
           <h1>Аренда <span style="color: #d4cc7b ;">экслюзивных</span> авто в Крыму</h1>
           <h3>Доставка в любую точку Крыма</h3>
           <h3>Бесплатно доп. аксессуары</h3>
@@ -49,7 +61,7 @@
           <span class="car__span"></span>
           <img src="img/hero1/map.png" alt="map" class="map">
         </div>
-      </div>
+      <!-- </div> -->
       <div class="container" id="our__park">
         <div class="hero2">
           
@@ -99,7 +111,7 @@
                 <div class="rental__price">
                   <p>от 4500 р. / сутки</p>
                 </div>
-                <div class="a__rental">
+                <div class="a__rental" style="margin-bottom: 15px;">
                   <a href="page__card.html"><button>Арендовать авто</button></a>
                 </div>
               </div>
